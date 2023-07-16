@@ -1,4 +1,4 @@
-@import "normalize.css";
+@import 'normalize.css';
 
 :root {
     --color-primary: #d73953;
@@ -32,16 +32,14 @@
     --nav-item-font-family: var(--font-family-title);
     --nav-item-font-weight: var(--font-weight-bold);
     --nav-item-font-size: var(--font-size-medium);
-    --nav-item-letter-spacing: 0.04rem;
+    --nav-item-letter-spacing: 4%;
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 3rem 0;
     --nav-item-link-hover: var(--color-primary);
     --section-tagline-margin: 0;
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -51,19 +49,14 @@ html {
 }
 
 body {
-    color: var(--text-color);
     font-family: var(--font-family-base);
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-regular);
+    color: var(--text-color);
     line-height: var(--line-height-base);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
 }
@@ -90,7 +83,7 @@ a:active {
 }
 
 .section {
-    padding: var(--section-padding);
+    padding: var(--section-body-padding-padding);
 }
 
 .section-header {
@@ -103,8 +96,8 @@ a:active {
 }
 
 .section-footer {
-    padding: var(--section-footer-padding);
     text-align: var(--section-footer-align);
+    padding: var(--section-footer-padding);
 }
 
 .card-category {
@@ -113,7 +106,7 @@ a:active {
 
 .section-title {
     font-family: var(--font-family-title);
-    font-size: var(--font-size-xx-large);
+    font-size: var(--font-size-x-large);
     font-weight: var(--font-weight-bold);
     margin: var(--section-title-margin);
     color: var(--section-title-color);
@@ -144,7 +137,7 @@ a:active {
     text-align: center;
 }
 
-.nav .nav-item {
+.nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
@@ -153,16 +146,16 @@ a:active {
     margin: var(--nav-item-margin);
 }
 
-.nav .nav-link {
+.nav-link {
     display: block;
     padding: 0.5rem 1rem;
 }
 
-.nav .nav-link:hover {
+.nav-link:hover {
     color: var(--nav-item-link-hover);
 }
 
-ul.rwo {
+ul.row {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -186,7 +179,7 @@ ul.rwo {
     color: var(--text-color);
 }
 
-.footer ul {
+.footer ul{
     text-align: right;
 }
 
